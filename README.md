@@ -9,9 +9,9 @@ Please follow the instructions in the README and your Research Hour-Log.
 
 Each module should be:
 
--Resusable and testable
--Saved in correct folder and file
--Documented with comments
+-Resusable and testable  
+-Saved in correct folder and file  
+-Documented with comments  
 
 One you have completed your assigned task(s), update your status on the Research Hour-Log and let me know what you have completed via email or message.
 
