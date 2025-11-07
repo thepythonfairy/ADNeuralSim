@@ -15,4 +15,6 @@ Please follow the instructions in the README and your Research Hour-Log.
 
 One you have completed your assigned task(s), update your status on the Research Hour-Log and let me know what you have completed via email or message.
 
+Use branch based pull-request please!
+
 If you have any questions, let me know!
