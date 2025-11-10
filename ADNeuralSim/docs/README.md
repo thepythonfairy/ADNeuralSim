@@ -4,7 +4,7 @@ A simulation framework for modeling neural activity in Alzheimer's Disease using
 
 ## Folder Structure
 - 'notebooks/' - Contains the main file (main_simulation.ipynb)
-- 'modules/' - Python modules for neuron mpdels, connectiivity, synaptic delays, etc.
+- 'modules/' - Python modules for neuron models, connectiivity, synaptic delays, etc.
 - 'docs/' - README file, documentation, onboarding notes, etc.
 - 'archive/' - For experimental or old notebooks/modules
 
@@ -44,7 +44,7 @@ Defines all constraints for the simulation
 ### 3. Network Construction Modules
 ALL modules use parameter abstraction - there are no hard coded values.
 
-- **'connectivity.py':** Builds binary connectivity matrix, assigned to - Harsh Patel
+- **'connectivity.py':** Builds binary connectivity matrix, assigned to - Janet Barba
 - **'synaptic_delay.py':** Assigns random delays to connections, assigned to - Yael Robert
 - **'neuron_types.py':** Lables neurons as excitatory/inhibitory, assigned to - Piyush Singh
 - **'hh_model.py':** Constructs HH neuron group in Brian2, assigned to - Steven Dang
@@ -64,14 +64,14 @@ Spike trains are used for firing rate analysis and visualization
 ### 5. Firing Rate Analysis
 Useful for comparing healthy vs AD conditions, can be used post-simulation to analyze neuron behavior
 
-- **'firing_rate.py':** Converst spike times to firing rate (Hz), assigned to Dhruv Khatra
+- **'firing_rate.py':** Converst spike times to firing rate (Hz), - assigned to Janet Barba
 
 ---
 
 ### 6. Visualization
 Assists in validating neuron firing and membrane potential evolution, gives warning if no spikes are recorded.
 
-- **'vizualization.py:'** Raster plot of population spike trains, assigned to Karthik Emani
+- **'vizualization.py:'** Raster plot of population spike trains, - assigned to Karthik Emani
 
 ---
 
@@ -83,4 +83,5 @@ Assists in validating neuron firing and membrane potential evolution, gives warn
 - When you finish your assigned module, email it to me so I can update it to the github repo
 
 The structure of this simulation allows for everyone to work in parallel without interfering with the simulation's framework or breaking anything lol
+
 
