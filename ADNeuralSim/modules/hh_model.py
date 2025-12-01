@@ -25,7 +25,7 @@ Test:
 
 from brian2 import*
 def build_hh_neuron_group(num_neurons: int, params: dict) -> NeuronGroup:
-    EL = params["El"]
+    EL = params["EL"]
     Cm = params["Cm"]
     gNa = params["gNa"]
     gK = params["gK"]
@@ -83,5 +83,6 @@ def build_hh_neuron_group(num_neurons: int, params: dict) -> NeuronGroup:
     #Assign parameters from the params dictionary here
     #Ex: neurons.gNa = params['gNa']
     #Make sure to set initial values for v, m, h, n
+
 
     return neurons
