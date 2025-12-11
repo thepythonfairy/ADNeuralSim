@@ -1,4 +1,4 @@
-#File: synaptic delay
+# File: synaptic delay
 #Assigned to: Yael Robert
 
 '''
@@ -26,8 +26,8 @@ def generate_synaptic_delays(connectivity_matrix: np.ndarray, min_delay: int = 1
     if min_delay == max_delay: # Check if min_delay and max_delay are the same
         return np.full_like(connectivity_matrix, min_delay) # All delays are the same
     
-    delays = np.random.randint(min_delay, max_delay + 1, size = connectivity_matrix.shape)
-
+    random_delays = np.random.randint(min_delay, max_delay + 1, size=connectivity_matrix.shape)
+    delays = np.where(connectivity_matrix != 0, random_delays, 0)
     return delays
 
 # Test the function
