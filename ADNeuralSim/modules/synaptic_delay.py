@@ -1,5 +1,5 @@
 # File: synaptic delay
-#Assigned to: Yael Robert
+# Assigned to: Yael Robert
 
 '''
 Purpose: This module should assign random delays in ms to each connection in the connectivity matrix.
@@ -48,6 +48,13 @@ def test_generate_synaptic_delays():
     delays = generate_synaptic_delays(zero_matrix)
     assert delays.shape == zero_matrix.shape, "The shape of the delays matrix for a zero input is incorrect."
     assert np.all(delays == 0), "Delays for a zero input should remain zero (no connections)."
+
+    # Test with matrix where some connections are present
+    mixed_matrix = np.array([[1, 0, 1], [0, 1, 0], [1, 0, 1]])
+    delays = generate_synaptic_delays(mixed_matrix)
+    assert delays.shape == mixed_matrix.shape, "The shape of the delays matrix for a mixed input is incorrect."
+    assert np.all(delays[delays != 0] >= 1) and np.all(delays[delays != 0] <= 20), "Delays for non-zero connections are out of the specified range." # Check if non-zero delays are within the range
+    assert np.all(delays[mixed_matrix == 0] == 0), "Delays for zero connections should remain zero." # Check if zero delays remain zero
     
     # Test with min_delay equal to max_delay
     min_max_matrix = np.ones((2, 2))
