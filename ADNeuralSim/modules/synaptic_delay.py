@@ -24,7 +24,8 @@ def generate_synaptic_delays(connectivity_matrix: np.ndarray, min_delay: int = 1
     if np.all(connectivity_matrix == 0): # Check if the matrix is all zeros
         return connectivity_matrix # No delays for no connections
     if min_delay == max_delay: # Check if min_delay and max_delay are the same
-        return np.full_like(connectivity_matrix, min_delay) # All delays are the same
+        delays = np.where(connectivity_matrix != 0, min_delay, 0) # Assign the same delay to all non-zero connections
+        return delays
     
     random_delays = np.random.randint(min_delay, max_delay + 1, size=connectivity_matrix.shape)
     delays = np.where(connectivity_matrix != 0, random_delays, 0)
