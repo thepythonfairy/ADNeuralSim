@@ -3,7 +3,7 @@
 
 ## **Hey team!**
 
-This is our repository for our Alzheimer"s Neural Signal Simulation Project. Each of you will be assigned a module that contributes to our shared simulation. Your task is to write a clean, documented Python function inside of your assigned .py file in the /modules folder via Jupyter Notebooks.
+This is our repository for our Alzheimer"s Neural Signal Simulation Project. Each of you will be assigned a module that contributes to our shared simulation. 
 
 Please follow the instructions in the README and your Research Hour-Log.
 
