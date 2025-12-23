@@ -1,5 +1,5 @@
 #File: connectivity.py
-#Assigned to: Harsh Patel
+#Assigned to: Janet Barba
 
 #Task: Build Connectivity Matrix
 
@@ -25,4 +25,5 @@ No self connection allowed, diagonal should be all 0s
 '''
 
 import numpy as np
+
 def generate_connectivity_matrix(num_neurons: int, connection_prob: float)->np.ndarray:
