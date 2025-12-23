@@ -1,5 +1,5 @@
 #File: visualization.py
-#Assigned to: Karthik Emani
+#Assigned to: Janet Barba
 
 #Task: Build Visualization
 
@@ -26,5 +26,6 @@ def plot_spike_train(spike_times: list, neuron_id: int = 0):
     if not spike_times:
         print("Warning: No spikes to plot for neuron {neuron_id}.")
         return
+
 
         #Continue the rest here
