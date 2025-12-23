@@ -1,5 +1,5 @@
 #File: firing_rate.py
-#Assigned to: Dhruv Khatra
+#Assigned to: Janet Barba
 
 #Task: Build Firing Rate Calculator
 
@@ -23,5 +23,6 @@ Zero or negative window, raise ValueError
 Test: Print firing rate for [30, 50, 180, 500] in a 1000 ms window
 
 '''
+
 
 def calculate_firing_rate(spike_times: list, window_ms: int = 1000)->float
